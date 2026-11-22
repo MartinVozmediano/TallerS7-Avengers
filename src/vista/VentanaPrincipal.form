@@ -1,0 +1,252 @@
+<?xml version='1.0' encoding='utf-8'?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="vista.VentanaPrincipal">
+  <grid id="10001" binding="panelPrincipal" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="0" vgap="0">
+    <margin top="5" left="5" bottom="5" right="5" />
+    <constraints>
+      <xy x="20" y="20" width="900" height="520" />
+    </constraints>
+    <properties />
+    <border type="none" />
+    <children>
+      <tabbedpane id="10008" binding="pestanas">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false" />
+        </constraints>
+        <properties />
+        <border type="none" />
+        <children>
+          <grid id="1000e" binding="panelRegistro" layout-manager="GridLayoutManager" row-count="6" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="8" vgap="8">
+            <margin top="18" left="18" bottom="18" right="18" />
+            <constraints>
+              <tabbedpane title="Registrar" />
+            </constraints>
+            <properties />
+            <border type="none" />
+            <children>
+              <component id="10015" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false" />
+                </constraints>
+                <properties>
+                  <text value="ID:" />
+                </properties>
+              </component>
+              <component id="1001a" class="javax.swing.JTextField" binding="registroId">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false" />
+                </constraints>
+                <properties />
+              </component>
+              <component id="1001e" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false" />
+                </constraints>
+                <properties>
+                  <text value="Nombre:" />
+                </properties>
+              </component>
+              <component id="10023" class="javax.swing.JTextField" binding="registroNombre">
+                <constraints>
+                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false" />
+                </constraints>
+                <properties />
+              </component>
+              <component id="10027" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false" />
+                </constraints>
+                <properties>
+                  <text value="Misión:" />
+                </properties>
+              </component>
+              <component id="1002c" class="javax.swing.JTextField" binding="registroMision">
+                <constraints>
+                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false" />
+                </constraints>
+                <properties />
+              </component>
+              <component id="10030" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false" />
+                </constraints>
+                <properties>
+                  <text value="Peligrosidad (1-5):" />
+                </properties>
+              </component>
+              <component id="10035" class="javax.swing.JComboBox" binding="registroPeligrosidad">
+                <constraints>
+                  <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false" />
+                </constraints>
+                <properties />
+              </component>
+              <component id="10039" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false" />
+                </constraints>
+                <properties>
+                  <text value="Pago mensual:" />
+                </properties>
+              </component>
+              <component id="1003e" class="javax.swing.JTextField" binding="registroPago">
+                <constraints>
+                  <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false" />
+                </constraints>
+                <properties />
+              </component>
+              <component id="10042" class="javax.swing.JButton" binding="botonRegistrar">
+                <constraints>
+                  <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false" />
+                </constraints>
+                <properties>
+                  <text value="Registrar Avenger" />
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="10047" binding="panelModificar" layout-manager="GridLayoutManager" row-count="6" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="8" vgap="8">
+            <margin top="18" left="18" bottom="18" right="18" />
+            <constraints>
+              <tabbedpane title="Modificar por ID" />
+            </constraints>
+            <properties />
+            <border type="none" />
+            <children>
+              <component id="1004e" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false" />
+                </constraints>
+                <properties>
+                  <text value="ID:" />
+                </properties>
+              </component>
+              <component id="10053" class="javax.swing.JTextField" binding="buscarId">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false" />
+                </constraints>
+                <properties />
+              </component>
+              <component id="10057" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false" />
+                </constraints>
+                <properties>
+                  <text value="Nombre:" />
+                </properties>
+              </component>
+              <component id="1005c" class="javax.swing.JTextField" binding="modificarNombre">
+                <constraints>
+                  <grid row="1" column="1" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false" />
+                </constraints>
+                <properties />
+              </component>
+              <component id="10060" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false" />
+                </constraints>
+                <properties>
+                  <text value="Misión:" />
+                </properties>
+              </component>
+              <component id="10065" class="javax.swing.JTextField" binding="modificarMision">
+                <constraints>
+                  <grid row="2" column="1" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false" />
+                </constraints>
+                <properties />
+              </component>
+              <component id="10069" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false" />
+                </constraints>
+                <properties>
+                  <text value="Peligrosidad (1-5):" />
+                </properties>
+              </component>
+              <component id="1006e" class="javax.swing.JComboBox" binding="modificarPeligrosidad">
+                <constraints>
+                  <grid row="3" column="1" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false" />
+                </constraints>
+                <properties />
+              </component>
+              <component id="10072" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false" />
+                </constraints>
+                <properties>
+                  <text value="Pago mensual:" />
+                </properties>
+              </component>
+              <component id="10077" class="javax.swing.JTextField" binding="modificarPago">
+                <constraints>
+                  <grid row="4" column="1" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false" />
+                </constraints>
+                <properties />
+              </component>
+              <component id="1007b" class="javax.swing.JButton" binding="botonBuscar">
+                <constraints>
+                  <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false" />
+                </constraints>
+                <properties>
+                  <text value="Buscar" />
+                </properties>
+              </component>
+              <component id="10080" class="javax.swing.JButton" binding="botonGuardar">
+                <constraints>
+                  <grid row="5" column="1" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false" />
+                </constraints>
+                <properties>
+                  <text value="Guardar cambios" />
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="10085" binding="panelListado" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="8" vgap="8">
+            <margin top="18" left="18" bottom="18" right="18" />
+            <constraints>
+              <tabbedpane title="Listar" />
+            </constraints>
+            <properties />
+            <border type="none" />
+            <children>
+              <scrollpane id="1008c">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false" />
+                </constraints>
+                <properties />
+                <border type="none" />
+                <children>
+                  <component id="10092" class="javax.swing.JTable" binding="tablaLista">
+                    <constraints />
+                    <properties />
+                  </component>
+                </children>
+              </scrollpane>
+            </children>
+          </grid>
+          <grid id="10095" binding="panelInforme" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="8" vgap="8">
+            <margin top="18" left="18" bottom="18" right="18" />
+            <constraints>
+              <tabbedpane title="Informe de pagos" />
+            </constraints>
+            <properties />
+            <border type="none" />
+            <children>
+              <scrollpane id="1009c">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false" />
+                </constraints>
+                <properties />
+                <border type="none" />
+                <children>
+                  <component id="100a2" class="javax.swing.JTable" binding="tablaInforme">
+                    <constraints />
+                    <properties />
+                  </component>
+                </children>
+              </scrollpane>
+            </children>
+          </grid>
+        </children>
+      </tabbedpane>
+    </children>
+  </grid>
+</form>
