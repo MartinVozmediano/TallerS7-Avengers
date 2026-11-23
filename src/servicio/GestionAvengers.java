@@ -29,6 +29,18 @@ public class GestionAvengers {
             return false;
         }
 
+        for (Avenger a : avengers.values()) {
+            if (a.getNombre().equalsIgnoreCase(avenger.getNombre().trim())) {
+                return false;
+            }
+        }
+
+        if(avenger.getNombre() == null ||
+                avenger.getNombre().isBlank() ||
+                !avenger.getNombre().matches("^[a-zA-ZáéíóúÁÉÍÓÚñÑüÜ\\s]+$")){
+            return false;
+        }
+
         avengers.put(id, avenger);
         return true;
     }

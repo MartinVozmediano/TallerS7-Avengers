@@ -54,6 +54,8 @@ public class VentanaPrincipal extends JFrame {
         pestanas.addChangeListener(e -> actualizarTablas());
     }
 
+
+
     private static DefaultTableModel tabla(String[] columnas) {
         return new DefaultTableModel(columnas, 0) {
             @Override public boolean isCellEditable(int fila, int columna) { return false; }
@@ -66,7 +68,8 @@ public class VentanaPrincipal extends JFrame {
                     registroMision.getText(), (Integer) registroPeligrosidad.getSelectedItem(),
                     leerPago(registroPago));
             if (!gestion.registrarAvenger(nuevo)) {
-                mensaje("Ya existe un Avenger con ese ID.", JOptionPane.WARNING_MESSAGE);
+                mensaje("Se encontraron errores en la informacion proporcionada. Intentelo de Nuevo",
+                        JOptionPane.WARNING_MESSAGE);
                 return;
             }
             registroId.setText(""); registroNombre.setText(""); registroMision.setText("");
@@ -156,4 +159,7 @@ public class VentanaPrincipal extends JFrame {
     private void mensaje(String texto, int tipo) {
         JOptionPane.showMessageDialog(this, texto, "Sistema Avengers", tipo);
     }
+
+
+
 }
